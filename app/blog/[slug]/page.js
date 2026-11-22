@@ -54,7 +54,7 @@ export default async function BlogArticle({ params }) {
 
         <aside className="article-sidebar">
           <div className="article-sidebar__card article-toc"><span className="article-sidebar__eyebrow">IN THIS ARTICLE</span><h3>Table of Contents</h3>{post.sections.map((section, index) => <a href={`#${section.id}`} key={section.id}><span>0{index + 1}</span>{section.title}</a>)}</div>
-          <div className="article-sidebar__card article-help"><span>READY TO GROW?</span><h3>Turn insight into measurable results.</h3><p>Let’s build a focused digital growth plan for your business.</p><Link href="/#contact">Book a Free Consultation →</Link></div>
+          <div className="article-sidebar__card article-help"><span>READY TO GROW?</span><h3>Turn insight into measurable results.</h3><p>Let’s build a focused digital growth plan for your business.</p><Link href="/contact">Book a Free Consultation →</Link></div>
           <div className="article-sidebar__card article-share"><strong>Share this article</strong><div><a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://leadbrix.in/blog/${post.slug}`)}`} target="_blank" rel="noreferrer" aria-label="Share on LinkedIn">in</a><a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://leadbrix.in/blog/${post.slug}`)}`} target="_blank" rel="noreferrer" aria-label="Share on Facebook">f</a><a href={`mailto:?subject=${encodeURIComponent(post.title)}&body=${encodeURIComponent(`https://leadbrix.in/blog/${post.slug}`)}`} aria-label="Share by email">✉</a></div></div>
         </aside>
       </div>

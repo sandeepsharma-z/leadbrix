@@ -106,7 +106,7 @@ export default function HeroSlider() {
               {slide.benefits.map(([icon, lineOne, lineTwo]) => <div key={`${lineOne}-${lineTwo}`}><b><SliderIcon name={icon} size={29} /></b><strong>{lineOne}<br />{lineTwo}</strong></div>)}
             </div>
             <div className="hero-actions">
-              <a className="pill-button" href="#contact">Get a Free Consultation <span><SliderIcon name="arrow" size={20} /></span></a>
+              <a className="pill-button" href="/contact">Get a Free Consultation <span><SliderIcon name="arrow" size={20} /></span></a>
               <p className="hero-action-note"><i>✓</i><span><strong>No obligation</strong>30-minute strategy call</span></p>
             </div>
           </div>

@@ -43,7 +43,7 @@ export default function AboutPage() {
           <h1>Built to Turn Ambition<br />Into <em>Meaningful Growth.</em></h1>
           <p>We are a strategy-led digital agency helping ambitious businesses build stronger brands, attract the right audience and grow with confidence.</p>
           <div className="about-page-actions">
-            <a className="about-page-primary" href="/#contact">Let’s Work Together <span>→</span></a>
+            <a className="about-page-primary" href="/contact">Let’s Work Together <span>→</span></a>
             <a className="about-page-secondary" href="/services">Explore Our Services <span>→</span></a>
           </div>
         </div>

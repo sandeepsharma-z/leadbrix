@@ -184,7 +184,7 @@ export default function Home() {
 
       <section className="work-section" id="work">
         <SectionIntro dark badge="Our Work / Case Studies" copy="A look at how we’ve helped businesses grow, scale, and build a stronger digital presence.">Real Projects. <em>Real Results.</em></SectionIntro>
-        <div className="projects-grid">{projects.map((project, index) => <article className={`project-card ${project.featured ? "featured" : ""}`} key={project.title}><div className="project-preview" style={{ "--project-image": `url(${project.image})` }}><span>0{index + 1}</span><small>{project.category}</small></div><div className="project-heading"><div><h3>{project.title}</h3><p>{project.copy}</p></div></div><div className="project-metrics"><div><b>{project.metricA}</b><span>{project.labelA}</span></div><div><b>{project.metricB}</b><span>{project.labelB}</span></div></div><a href="#contact">Discuss a Similar Project <span>→</span></a></article>)}</div>
+        <div className="projects-grid">{projects.map((project, index) => <article className={`project-card ${project.featured ? "featured" : ""}`} key={project.title}><div className="project-preview" style={{ "--project-image": `url(${project.image})` }}><span>0{index + 1}</span><small>{project.category}</small></div><div className="project-heading"><div><h3>{project.title}</h3><p>{project.copy}</p></div></div><div className="project-metrics"><div><b>{project.metricA}</b><span>{project.labelA}</span></div><div><b>{project.metricB}</b><span>{project.labelB}</span></div></div><a href="/contact">Discuss a Similar Project <span>→</span></a></article>)}</div>
       </section>
 
       <section className="testimonials-section" id="testimonials">

@@ -144,3 +144,18 @@ export async function updateEnquiryStatus(id, status) {
   return result.affectedRows === 1;
 }
 
+export async function deleteEnquiry(id) {
+  await ensureSchema();
+  const [result] = await getPool().execute("DELETE FROM enquiries WHERE id = ?", [id]);
+  return result.affectedRows === 1;
+}
+
+export async function updateAdminPassword(id, passwordHash) {
+  await ensureSchema();
+  const [result] = await getPool().execute(
+    "UPDATE admin_users SET password_hash = ? WHERE id = ?",
+    [passwordHash, id]
+  );
+  return result.affectedRows === 1;
+}
+

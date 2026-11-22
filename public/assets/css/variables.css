@@ -1,0 +1,79 @@
+/* ============================================================
+   LEADBRIX — Design System Variables
+   ============================================================ */
+@import url("/vendor/fonts.googleapis.com/css2-family-DM-Sans-ital-opsz-wght-0-9..40-300-0-9..40-400-0-9..40-500-0-9..40-700-1-9..40-400-family-DM-Serif-Display-ital-0-1-display-swap.css");
+
+:root {
+  /* ── Primary Colors ── */
+  --color-white:        #ffffff;
+  --color-offwhite:     #f4f6fb;
+  --color-light:        #eef1f8;
+  --color-black:        #000000;
+  --color-dark-navy:    #000000;
+
+  /* ── Accent ── */
+  --color-gold:         #fcc902;
+  --color-gold-dim:     #e6b500;
+  --color-blue:         #fcc902;
+  --color-blue-light:   #e6b500;
+  --color-blue-pale:    rgba(252, 201, 2, 0.15);
+        --brand-black:   #000000;
+      --brand-yellow:  #fcc902;
+      --brand-yellow-dark: #e0b200;
+      --brand-yellow-light: rgba(252, 201, 2, 0.12);
+      --brand-yellow-glow:  rgba(252, 201, 2, 0.35);
+
+  /* ── Text ── */
+  --color-text-primary:   #000000;
+  --color-text-secondary: rgba(0, 0, 0, 0.60);
+  --color-text-muted:     rgba(0, 0, 0, 0.38);
+
+  /* ── UI ── */
+  --color-border:       rgba(0, 0, 0, 0.08);
+  --color-border-mid:   rgba(0, 0, 0, 0.14);
+  --color-card:         rgba(255, 255, 255, 0.90);
+  --color-card-border:  rgba(255, 255, 255, 0.80);
+
+  /* ── Shadows ── */
+  --shadow-soft:        0 8px 32px rgba(0, 0, 0, 0.06);
+  --shadow-card:        0 16px 48px rgba(0, 0, 0, 0.10);
+  --shadow-hover:       0 24px 64px rgba(0, 0, 0, 0.16);
+  --shadow-float:       0 4px 24px rgba(0, 0, 0, 0.12);
+
+  /* ── Typography ── */
+  --font-primary:       'DM Sans', sans-serif;
+  --font-display:       'DM Serif Display', serif;
+  --font-size-hero:     clamp(44px, 6.5vw, 92px);
+  --font-size-h2:       clamp(30px, 4vw, 56px);
+  --font-size-h3:       clamp(20px, 2.5vw, 30px);
+  --font-size-body:     16px;
+  --font-size-small:    13px;
+  --font-size-label:    11px;
+  --font-weight-light:    300;
+  --font-weight-regular:  400;
+  --font-weight-medium:   500;
+  --font-weight-bold:     700;
+  --letter-spacing-tight: -2px;
+  --letter-spacing-wide:  2px;
+  --line-height-heading:  1.05;
+  --line-height-body:     1.75;
+
+  /* ── Spacing ── */
+  --section-py:         120px;
+  --container-max:      1400px;
+  --container-px:       48px;
+
+  /* ── Animation ── */
+  --ease-smooth:        cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-bounce:        cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out:           cubic-bezier(0.0, 0.0, 0.2, 1);
+  --duration-fast:      0.3s;
+  --duration-mid:       0.6s;
+  --duration-slow:      1.2s;
+
+  /* ── Layout ── */
+  --radius-btn:         50px;
+  --radius-card:        16px;
+  --radius-lg:          24px;
+  --navbar-height:      76px;
+}

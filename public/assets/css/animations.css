@@ -1,0 +1,112 @@
+/* ============================================================
+   LEADBRIX — Animations
+   ============================================================ */
+
+/* ── Page load overlay ── */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  background: var(--color-offwhite);
+  z-index: 9990;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s var(--ease-smooth), visibility 0.6s;
+}
+
+.page-loader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.page-loader__logo {
+  font-family: var(--font-primary);
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--color-dark-navy);
+  letter-spacing: -0.03em;
+  opacity: 0;
+  animation: loaderReveal 0.6s var(--ease-smooth) 0.2s forwards;
+}
+
+@keyframes loaderReveal {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Float animation for cards ── */
+@keyframes floatY {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+@keyframes floatYRight {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-6px); }
+}
+
+.float-card.is-visible {
+  animation: floatY 5s ease-in-out infinite;
+}
+
+.float-card.is-visible:nth-child(2) {
+  animation: floatY 6s ease-in-out 1s infinite;
+}
+
+.traffic-card.is-visible {
+  animation: floatYRight 5.5s ease-in-out 0.5s infinite;
+}
+
+/* ── Bar chart grow ── */
+@keyframes barGrow {
+  from { transform: scaleY(0); transform-origin: bottom; }
+  to   { transform: scaleY(1); transform-origin: bottom; }
+}
+
+.bar.animate {
+  animation: barGrow 0.8s var(--ease-smooth) both;
+}
+
+.bar:nth-child(1).animate { animation-delay: 0.1s; }
+.bar:nth-child(2).animate { animation-delay: 0.2s; }
+.bar:nth-child(3).animate { animation-delay: 0.3s; }
+.bar:nth-child(4).animate { animation-delay: 0.4s; }
+.bar:nth-child(5).animate { animation-delay: 0.5s; }
+.bar:nth-child(6).animate { animation-delay: 0.6s; }
+
+/* ── Scroll progress bar ── */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: var(--color-blue);
+  width: 0%;
+  z-index: 1001;
+  transition: width 0.1s linear;
+}
+
+/* ── Magnetic button effect base ── */
+.magnetic {
+  display: inline-block;
+  transition: transform 0.3s var(--ease-smooth);
+}
+
+/* ── Reveal utility classes (used by GSAP) ── */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.reveal-fade {
+  opacity: 0;
+}
+
+/* ── Splitting.js char animation ── */
+.word .char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(60px) rotate(4deg);
+  transition: none;
+}

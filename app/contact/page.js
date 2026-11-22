@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SiteHeader from "../components/SiteHeader";
 import BlogFooter from "../blog/BlogFooter";
+import ContactForm from "./ContactForm";
 
 export const metadata = {
   title: "Contact LeadBrix | Let's Grow Your Business",
@@ -64,14 +65,7 @@ export default function ContactPage() {
       <div className="contact-v2-formcard">
         <p className="contact-v2-overline">Send Us a Message</p>
         <h2>Let’s Start a <em>Conversation</em></h2>
-        <form action="mailto:hello@leadbrix.in" method="post" encType="text/plain">
-          <label><Icon name="user"/><input name="name" required placeholder="Your Name *"/></label>
-          <label><Icon name="mail"/><input name="email" type="email" required placeholder="Your Email *"/></label>
-          <label><Icon name="phone"/><input name="phone" type="tel" placeholder="Your Phone"/></label>
-          <label><Icon name="grid"/><select name="service" required defaultValue=""><option value="" disabled>Select a Service *</option><option>SEO & Organic Growth</option><option>Google Ads / PPC</option><option>Social Media Marketing</option><option>Branding & Identity</option><option>Website Development</option><option>Business Automation</option></select></label>
-          <label className="contact-v2-message"><Icon name="message"/><textarea name="message" required placeholder="Tell us about your project... *"/></label>
-          <button type="submit">Send Message <span>→</span></button>
-        </form>
+        <ContactForm />
       </div>
     </section>
 
